@@ -1,11 +1,16 @@
 
 import React from 'react'
+import Jumbotron from './components/content/Jumbotron'
 
 export default function App() {
 	return (
-		<main>
-			<h1>Robert Manders</h1>
-			<p>Front-End Developer.</p>
-		</main>
+		<div className='container'>
+			<Jumbotron />
+			<main>
+			</main>
+			<footer>
+
+			</footer>
+		</div>
 	)
 }

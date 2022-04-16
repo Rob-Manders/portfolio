@@ -1,5 +1,5 @@
 
-@use './vendor';
+@use './vendor' as *;
 
 *,
 *::before,
@@ -14,13 +14,12 @@ body {
 }
 
 body {
-	background-color: #0d101b;
+	background-color: hsl(227, 35%, 8%);
 	font-family: 'IBM Plex Sans', sans-serif;
-	color: rgb(231, 231, 231);
-	text-align: center;
+	color: hsl(0, 0%, 91%);
 }
 
 code {
 	font-family: 'IBM Plex Mono', monospace;
-	color: #f3aa23;
+	color: hsl(39, 90%, 55%);
 }
