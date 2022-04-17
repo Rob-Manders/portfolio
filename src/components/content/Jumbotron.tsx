@@ -2,6 +2,8 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { ThemeContext } from '../../index'
+import Icon_Github from '../icons/Icon_Github'
+import Icon_LinkedIn from '../icons/Icon_LinkedIn'
 
 const JumbotronContainer = styled.header`
 	
@@ -28,6 +30,18 @@ const JumbotronContainer = styled.header`
 		}
 	}
 
+	.social-links {
+		text-align: center;
+		a + a {
+			margin-left: 1.5rem;
+		}
+
+		svg {
+			height: 2rem;
+			width: 2rem;
+			fill: ${props => props.theme.primary};
+		}
+	}
 `
 
 export default function Jumbotron() {
@@ -38,6 +52,10 @@ export default function Jumbotron() {
 			<div className='title'>
 				<h1>Robert Manders</h1>
 				<p>Front-End Developer</p>
+			</div>
+			<div className='social-links'>
+				<a href='https://github.com/Rob-Manders'><Icon_Github /></a>
+				<a href='https://www.linkedin.com/in/robert-manders-925b88202/'><Icon_LinkedIn /></a>
 			</div>
 		</JumbotronContainer>
 	)
