@@ -6,7 +6,7 @@ import { ThemeContext } from '../../context/Theme'
 
 const SkipButton = styled.a`
 	position: absolute;
-	top: -3rem;
+	top: -3rem;	
 	left: 50%;
 	transform: translateX(-50%);
 
@@ -19,7 +19,12 @@ const SkipButton = styled.a`
 	font-weight: 700;
 	color: ${props => props.theme.background};
 
-	transition: transform 250ms ease-in-out;
+	transition: transform 250ms ease-in-out, background-color 150ms ease-in-out;
+
+	&:focus,
+	&:hover {
+		color: ${props => props.theme.background};
+	}
 
 	&:focus {
 		transform: translateY(4rem) translateX(-50%);

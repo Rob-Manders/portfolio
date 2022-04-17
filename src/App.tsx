@@ -12,9 +12,9 @@ export default function App() {
 			
 			<main id='content'>
 				<AboutMe />
+				
 
 			</main>
-			<PageDivider />
 			<footer>
 
 			</footer>

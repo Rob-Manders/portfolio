@@ -13,7 +13,7 @@ const AboutMeContainer = styled.article`
 
 	.heading {
 		text-align: center;
-		margin: 2rem 0  0 2rem;
+		margin: 1rem 0  1rem 0;
 	}
 
 	.mugshot {
@@ -22,18 +22,21 @@ const AboutMeContainer = styled.article`
 		align-items: center;
 		padding: 1rem 2rem;
 		max-height: fit-content;
-
+		
 		img {
-			--dimensions: clamp(200px, 90%, 500px);
-			max-width: var(--dimensions);
-			max-height: var(--dimensions);
+			--dimensions: clamp(200px, 100%, 300px);
+			width: var(--dimensions);
+			height: var(--dimensions);
+
+			aspect-ratio: 1 / 1;
 			border-radius: 50%;
 			box-shadow: 0px 10px 12px -6px rgba(0,0,0,0.5);
+			object-fit: cover;
 		}
 	}
 
 	.aboutMe {
-		margin: 0 0 2rem 2rem;
+		margin: 1rem 0 0 0;
 	}
 
 	@media (min-width: 800px) {
@@ -47,6 +50,7 @@ const AboutMeContainer = styled.article`
 		.heading {
 			grid-area: heading;
 			text-align: left;
+			margin: 2rem 0  1rem 2rem;
 		}
 
 		.mugshot {
@@ -55,6 +59,7 @@ const AboutMeContainer = styled.article`
 
 		.aboutMe {
 			grid-area: aboutme;
+			margin: 0 0 2rem 2rem;
 		}
 	}
 `
@@ -66,10 +71,13 @@ export default function AboutMe() {
 		<AboutMeContainer theme={darkTheme}>
 			<h2 className='heading'>Hi, I'm Robert!</h2>
 			<div className='mugshot'>
-				<img src='https://picsum.photos/400' />
+				<img src='./images/mugshot.jpg' width='300' height='300' />
 			</div>
 			<div className='aboutMe'>
 				<p>I'm a front-end developer based in Newcastle.</p>
+				<p>I build web experiences in React using HTML, CSS, SASS, Javascript and Typescript.</p>
+				<p>You can see some of my work below and all of the code is available to review on my <a href='https://github.com/Rob-Manders'>GitHub</a>.</p>
+				<p>If you'd like to speak to me you can contact me via my <a href='https://www.linkedin.com/in/robert-manders-925b88202/'>LinkedIn</a> page.</p>
 			</div>
 		</AboutMeContainer>
 	)

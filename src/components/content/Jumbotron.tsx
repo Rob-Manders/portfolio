@@ -51,7 +51,7 @@ const JumbotronContainer = styled.header`
 			height: var(--icon-dimensions);
 			width: var(--icon-dimensions);
 			fill: ${props => props.theme.primary};
-			opacity: 0.75;
+			opacity: 0.5;
 			transition: 150ms ease-in-out;
 		}
 

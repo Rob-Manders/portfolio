@@ -15,6 +15,15 @@ const ScrollArrow = styled.div`
 		height: var(--icon-dimensions);
 		fill: ${props => props.theme.primary};
 		opacity: 0.2;
+		transition: 150ms ease-in-out;
+	}
+
+	a:hover,
+	a:focus {
+		svg {
+			fill: ${props => props.theme.accent};
+			opacity: 1;
+		}
 	}
 `
 
@@ -23,7 +32,7 @@ export default function ScrollIndicator() {
 
 	return (
 		<ScrollArrow theme={darkTheme} >
-			<Icon_AngleDown />
+			<a href='#content'><Icon_AngleDown /></a>
 		</ScrollArrow>
 	)
 }

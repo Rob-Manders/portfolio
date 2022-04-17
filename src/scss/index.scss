@@ -1,6 +1,10 @@
 
 @use './vendor' as *;
 
+:root {
+	scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -16,11 +20,19 @@ body {
 body {
 	background-color: hsl(227, 35%, 8%);
 	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 1.1rem;
 	color: hsl(0, 0%, 91%);
 }
 
 a {
 	outline: none;
+	color:hsl(0, 0%, 91%);
+	transition: 150ms ease-in-out;
+
+	&:hover,
+	&:focus {
+		color:hsl(28, 85%, 53%);
+	}
 }
 
 h2 {
