@@ -7,9 +7,9 @@ export default function App() {
 		<div className='container'>
 			<Jumbotron />
 			
-			<main>
-				
-
+			<main id='content'>
+				<h2>Hello!</h2>
+				<p>Here is some content.</p>
 
 			</main>
 			<footer>

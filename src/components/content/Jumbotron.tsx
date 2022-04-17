@@ -4,9 +4,11 @@ import styled from 'styled-components'
 import { ThemeContext } from '../../index'
 import Icon_Github from '../icons/Icon_Github'
 import Icon_LinkedIn from '../icons/Icon_LinkedIn'
+import SkipLink from '../elements/SkipLink'
 import ScrollIndicator from '../elements/ScrollIndicator'
 
 const JumbotronContainer = styled.header`
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
@@ -68,6 +70,7 @@ export default function Jumbotron() {
 
 	return (
 		<JumbotronContainer theme={theme}>
+			<SkipLink />
 			<div className='title'>
 				<h1>Robert Manders</h1>
 				<p>Front-End Developer</p>
