@@ -5,7 +5,8 @@ import { ThemeContext } from '../../context/Theme'
 import Icon_Moon from '../icons/Icon_Moon'
 import Icon_Sun from '../icons/Icon_Sun'
 
-const Toggle = styled.div`
+const ToggleContainer = styled.button`
+	all: unset;
 	display: flex;
 	align-items: center;
 	margin-top: 0.5rem;
@@ -42,7 +43,8 @@ const Toggle = styled.div`
 		}
 	}
 
-	&:hover {
+	&:hover,
+	&:focus {
 		svg {
 			opacity: 0.9;
 		}
@@ -60,12 +62,12 @@ export default function ThemeToggle() {
 	// TODO: Hook up to switch theme.
 
 	return (
-		<Toggle theme={theme} onClick={() => setToggled(!toggled)}>
+		<ToggleContainer theme={theme} onClick={() => setToggled(!toggled)}>
 			<Icon_Moon />
 			<div className='switch'>
 				<div className={`toggle ${toggled && 'toggled'}`} />
 			</div>
 			<Icon_Sun />
-		</Toggle>
+		</ToggleContainer>
 	)
 }

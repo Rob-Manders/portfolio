@@ -9,7 +9,6 @@ import ThemeToggle from '../elements/ThemeToggle'
 import ScrollIndicator from '../elements/ScrollIndicator'
 
 const JumbotronContainer = styled.header`
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	height: 100vh;

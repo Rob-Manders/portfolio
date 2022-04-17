@@ -59,7 +59,7 @@ const AboutMeContainer = styled.article`
 
 		.aboutMe {
 			grid-area: aboutme;
-			margin: 0 0 2rem 2rem;
+			margin: 0 2rem 2rem 2rem;
 		}
 	}
 `
