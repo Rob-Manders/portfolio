@@ -1,20 +1,23 @@
 
 import React from 'react'
 import Jumbotron from './components/content/Jumbotron'
+import Container from './components/layout/Container'
+import PageDivider from './components/elements/PageDivider'
+import AboutMe from './components/content/AboutMe'
 
 export default function App() {
 	return (
-		<div className='container'>
+		<Container>
 			<Jumbotron />
 			
 			<main id='content'>
-				<h2>Hello!</h2>
-				<p>Here is some content.</p>
+				<AboutMe />
 
 			</main>
+			<PageDivider />
 			<footer>
 
 			</footer>
-		</div>
+		</Container>
 	)
 }

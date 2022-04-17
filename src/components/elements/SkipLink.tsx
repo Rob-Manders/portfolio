@@ -1,7 +1,8 @@
 
 import React, { useContext } from 'react'
 import styled from 'styled-components'
-import { ThemeContext } from '../../index'
+// import { ThemeContext } from '../../index'
+import { ThemeContext } from '../../context/Theme'
 
 const SkipButton = styled.a`
 	position: absolute;
@@ -17,7 +18,6 @@ const SkipButton = styled.a`
 	font-size: 0.85rem;
 	font-weight: 700;
 	color: ${props => props.theme.background};
-	outline: none;
 
 	transition: transform 250ms ease-in-out;
 
@@ -31,10 +31,10 @@ const SkipButton = styled.a`
 `
 
 export default function SkipLink() {
-	const { theme } = useContext(ThemeContext)
+	const darkTheme = useContext(ThemeContext)
 
 	return (
-		<SkipButton theme={ theme } href='#content'>
+		<SkipButton theme={ darkTheme } href='#content'>
 			Skip to Content
 		</SkipButton>
 	)

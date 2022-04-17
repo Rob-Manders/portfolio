@@ -1,7 +1,8 @@
 
 import React, { useContext } from 'react'
 import styled from 'styled-components'
-import { ThemeContext } from '../../index'
+// import { ThemeContext } from '../../index'
+import { ThemeContext } from '../../context/Theme'
 import Icon_AngleDown from '../icons/Icon_AngleDown'
 
 const ScrollArrow = styled.div`
@@ -18,10 +19,10 @@ const ScrollArrow = styled.div`
 `
 
 export default function ScrollIndicator() {
-	const { theme } = useContext(ThemeContext)
+	const darkTheme = useContext(ThemeContext)
 
 	return (
-		<ScrollArrow theme={theme} >
+		<ScrollArrow theme={darkTheme} >
 			<Icon_AngleDown />
 		</ScrollArrow>
 	)

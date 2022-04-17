@@ -1,7 +1,7 @@
 
 import React, { useContext } from 'react'
 import styled from 'styled-components'
-import { ThemeContext } from '../../index'
+import { ThemeContext } from '../../context/Theme'
 import Icon_Github from '../icons/Icon_Github'
 import Icon_LinkedIn from '../icons/Icon_LinkedIn'
 import SkipLink from '../elements/SkipLink'
@@ -41,7 +41,7 @@ const JumbotronContainer = styled.header`
 		justify-content: center;
 		align-items: center;
 		flex-grow: 1;
-
+		
 		a + a {
 			margin-left: 1.5rem;
 		}
@@ -66,10 +66,10 @@ const JumbotronContainer = styled.header`
 `
 
 export default function Jumbotron() {
-	const { theme } = useContext(ThemeContext)
+	const darkTheme = useContext(ThemeContext)
 
 	return (
-		<JumbotronContainer theme={theme}>
+		<JumbotronContainer theme={darkTheme}>
 			<SkipLink />
 			<div className='title'>
 				<h1>Robert Manders</h1>
