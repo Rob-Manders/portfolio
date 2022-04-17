@@ -4,15 +4,19 @@ import styled from 'styled-components'
 import { ThemeContext } from '../../index'
 import Icon_Github from '../icons/Icon_Github'
 import Icon_LinkedIn from '../icons/Icon_LinkedIn'
+import ScrollIndicator from '../elements/ScrollIndicator'
 
 const JumbotronContainer = styled.header`
-	
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+
 	.title {
-		height: 600px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		flex-grow: 2;
 
 		h1,
 		p {
@@ -31,15 +35,30 @@ const JumbotronContainer = styled.header`
 	}
 
 	.social-links {
-		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-grow: 1;
+
 		a + a {
 			margin-left: 1.5rem;
 		}
 
 		svg {
-			height: 2rem;
-			width: 2rem;
+			--icon-dimensions: 2.5rem;
+			height: var(--icon-dimensions);
+			width: var(--icon-dimensions);
 			fill: ${props => props.theme.primary};
+			opacity: 0.75;
+			transition: 150ms ease-in-out;
+		}
+
+		a:hover,
+		a:focus {
+			svg {
+				fill: ${props => props.theme.accent};
+				opacity: 1;
+			}
 		}
 	}
 `
@@ -57,6 +76,7 @@ export default function Jumbotron() {
 				<a href='https://github.com/Rob-Manders'><Icon_Github /></a>
 				<a href='https://www.linkedin.com/in/robert-manders-925b88202/'><Icon_LinkedIn /></a>
 			</div>
+			<ScrollIndicator />
 		</JumbotronContainer>
 	)
 }
