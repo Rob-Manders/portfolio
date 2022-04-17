@@ -39,7 +39,7 @@ export default function SkipLink() {
 	const darkTheme = useContext(ThemeContext)
 
 	return (
-		<SkipButton theme={ darkTheme } href='#content'>
+		<SkipButton theme={ darkTheme } href='#content' aria-label='Skip to content'>
 			Skip to Content
 		</SkipButton>
 	)

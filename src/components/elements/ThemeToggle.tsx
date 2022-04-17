@@ -62,7 +62,7 @@ export default function ThemeToggle() {
 	// TODO: Hook up to switch theme.
 
 	return (
-		<ToggleContainer theme={theme} onClick={() => setToggled(!toggled)}>
+		<ToggleContainer theme={theme} onClick={() => setToggled(!toggled)} aria-label='Change colour theme'>
 			<Icon_Moon />
 			<div className='switch'>
 				<div className={`toggle ${toggled && 'toggled'}`} />

@@ -31,7 +31,7 @@ export default function ScrollIndicator() {
 	const darkTheme = useContext(ThemeContext)
 
 	return (
-		<ScrollArrow theme={darkTheme} >
+		<ScrollArrow theme={darkTheme} aria-label='Skip to content'>
 			<a href='#content'><Icon_AngleDown /></a>
 		</ScrollArrow>
 	)
