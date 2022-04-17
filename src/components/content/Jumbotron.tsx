@@ -5,6 +5,7 @@ import { ThemeContext } from '../../context/Theme'
 import Icon_Github from '../icons/Icon_Github'
 import Icon_LinkedIn from '../icons/Icon_LinkedIn'
 import SkipLink from '../elements/SkipLink'
+import ThemeToggle from '../elements/ThemeToggle'
 import ScrollIndicator from '../elements/ScrollIndicator'
 
 const JumbotronContainer = styled.header`
@@ -51,7 +52,7 @@ const JumbotronContainer = styled.header`
 			height: var(--icon-dimensions);
 			width: var(--icon-dimensions);
 			fill: ${props => props.theme.primary};
-			opacity: 0.5;
+			opacity: 0.25;
 			transition: 150ms ease-in-out;
 		}
 
@@ -71,6 +72,7 @@ export default function Jumbotron() {
 	return (
 		<JumbotronContainer theme={darkTheme}>
 			<SkipLink />
+			<ThemeToggle />
 			<div className='title'>
 				<h1>Robert Manders</h1>
 				<p>Front-End Developer</p>
