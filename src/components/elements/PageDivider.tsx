@@ -9,7 +9,7 @@ const Divider = styled.div`
 	display: flex;
 	align-items: center;
 	opacity: 0.25;
-	margin: 0.5rem 0;
+	margin: 0.5rem 1rem;
 
 	.line {
 		width: 50%;

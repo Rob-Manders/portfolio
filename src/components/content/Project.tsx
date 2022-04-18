@@ -8,7 +8,11 @@ import ProjectLink from '../elements/ProjectLink'
 
 
 const ProjectContainer = styled.section`
-	padding: 2rem;
+	padding: 1.5rem;
+
+	.title {
+		margin: 0;
+	}
 
 	.description {
 		margin-bottom: 1.5rem;
@@ -42,7 +46,7 @@ const ProjectContainer = styled.section`
 		.mobileImage {
 			grid-row: 2 / -1;
 			grid-column: 6 / -1;
-			aspect-ratio: 1 / 1.6;
+			aspect-ratio: 2 / 3;
 		}
 	}
 
@@ -76,6 +80,7 @@ const ProjectContainer = styled.section`
 		.images {
 			grid-area: images;
 			margin-left: 3rem;
+			margin-right: 2rem;
 		}
 	}
 `
@@ -103,7 +108,7 @@ export default function Project({ projectInfo, children }: ComponentProps) {
 			</div>
 			<div className='images'>
 				<img className='desktopImage' src={desktopImage} alt={`${projectTitle} desktop screenshot`} width='400' height='300'/>
-				<img className='mobileImage' src={mobileImage} alt={`${projectTitle} mobile screenshot`} width='200' height='320' />
+				<img className='mobileImage' src={mobileImage} alt={`${projectTitle} mobile screenshot`} width='200' height='300' />
 			</div>
 			<div className='links'>
 				<ProjectGithubLink githubLink={githubLink} projectTitle={projectTitle} />

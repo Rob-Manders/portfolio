@@ -7,8 +7,8 @@ const AboutMeContainer = styled.section`
 	display: flex;
 	flex-direction: column;
 	background-color: ${props => props.theme.backgroundSecondary};
-	margin: 1rem 0;
-	padding: 2rem;
+	margin: 1rem 0 2rem;
+	padding: 1.5rem;
 	border-radius: 2rem;
 
 	.heading {
