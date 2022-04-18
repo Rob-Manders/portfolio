@@ -17,8 +17,19 @@ export default function App() {
 					projectTitle: 'Newcastle Go Club',
 					projectLink: 'https://newcastlego.co.uk/',
 					githubLink: 'https://github.com/Rob-Manders/newcastle-go-club',
-					desktopImage: '#',
-					mobileImage: '#'
+					desktopImage: 'https://picsum.photos/400/300',
+					mobileImage: 'https://picsum.photos/200/300'
+				}}>
+					<p>A website for the Newcastle Go Club, built to increase our online presence as we look to grow the club.</p>
+					<p>Built in Next.js, this website features a simple back end and admin pages to set up, store and serve the meeting schedule.</p>
+				</Project>
+				<PageDivider />
+				<Project projectInfo={{
+					projectTitle: 'Social Media Dashboard',
+					projectLink: 'https://newcastlego.co.uk/',
+					githubLink: 'https://github.com/Rob-Manders/newcastle-go-club',
+					desktopImage: 'https://picsum.photos/400/300',
+					mobileImage: 'https://picsum.photos/200/300'
 				}}>
 					<p>A website for the Newcastle Go Club.</p>
 				</Project>

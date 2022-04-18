@@ -35,6 +35,7 @@ const GithubButton = styled.div`
 	.tooltip {
 		cursor: default;
 		text-decoration: none;
+		margin: 0;
 		margin-right: 1rem;
 		opacity: 0;
 		transition: opacity 150ms ease-in-out;
