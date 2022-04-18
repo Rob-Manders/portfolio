@@ -3,9 +3,15 @@ import React, { useContext, ReactNode } from 'react'
 import styled from 'styled-components'
 import { ThemeContext } from '../../context/Theme'
 import { ProjectInfo } from '../../interfaces'
+import ProjectLink from '../elements/ProjectLink'
+
 
 const ProjectContainer = styled.section`
 	padding: 2rem;
+
+	.links {
+		margin: 2rem 0;
+	}
 `
 
 interface ComponentProps {
@@ -29,12 +35,12 @@ export default function Project({ projectInfo, children }: ComponentProps) {
 			<div className='description'>
 				{children}
 			</div>
-			<div className='links'>
-
-			</div>
 			<div className='images'>
 				<img src={desktopImage} alt={`${projectTitle} desktop screenshot`} />
 				<img src={mobileImage} alt={`${projectTitle} mobile screenshot`} />
+			</div>
+			<div className='links'>
+				<ProjectLink projectLink={projectLink} />
 			</div>
 		</ProjectContainer>
 	)
