@@ -77,8 +77,8 @@ export default function Jumbotron() {
 				<p>Front-End Developer</p>
 			</div>
 			<div className='social-links'>
-				<a href='https://github.com/Rob-Manders'><Icon_Github /></a>
-				<a href='https://www.linkedin.com/in/robert-manders-925b88202/'><Icon_LinkedIn /></a>
+				<a href='https://github.com/Rob-Manders' target='_blank'><Icon_Github /></a>
+				<a href='https://www.linkedin.com/in/robert-manders-925b88202/' target='_blank'><Icon_LinkedIn /></a>
 			</div>
 			<ScrollIndicator />
 		</JumbotronContainer>

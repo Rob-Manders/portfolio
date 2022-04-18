@@ -3,6 +3,7 @@ import React, { useContext, ReactNode } from 'react'
 import styled from 'styled-components'
 import { ThemeContext } from '../../context/Theme'
 import { ProjectInfo } from '../../interfaces'
+import ProjectGithubLink from '../elements/ProjectGithubLink'
 import ProjectLink from '../elements/ProjectLink'
 
 
@@ -10,6 +11,8 @@ const ProjectContainer = styled.section`
 	padding: 2rem;
 
 	.links {
+		display: flex;
+		justify-content: flex-end;
 		margin: 2rem 0;
 	}
 `
@@ -40,6 +43,7 @@ export default function Project({ projectInfo, children }: ComponentProps) {
 				<img src={mobileImage} alt={`${projectTitle} mobile screenshot`} />
 			</div>
 			<div className='links'>
+				<ProjectGithubLink githubLink={githubLink} projectTitle={projectTitle} />
 				<ProjectLink projectLink={projectLink} />
 			</div>
 		</ProjectContainer>
