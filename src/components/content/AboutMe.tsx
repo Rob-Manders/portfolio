@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { ThemeContext } from '../../context/Theme'
 
-const AboutMeContainer = styled.article`
+const AboutMeContainer = styled.section`
 	display: flex;
 	flex-direction: column;
 	background-color: ${props => props.theme.backgroundSecondary};
@@ -68,10 +68,10 @@ export default function AboutMe() {
 	const darkTheme = useContext(ThemeContext)
 
 	return (
-		<AboutMeContainer theme={darkTheme}>
+		<AboutMeContainer theme={darkTheme} aria-label='about me'>
 			<h2 className='heading'>Hi, I'm Robert!</h2>
 			<div className='mugshot'>
-				<img src='./images/mugshot.jpg' width='300' height='300' />
+				<img src='./images/mugshot.jpg' width='300' height='300' alt='a picture of me'/>
 			</div>
 			<div className='aboutMe'>
 				<p>I'm a front-end developer based in Newcastle.</p>
