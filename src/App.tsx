@@ -5,6 +5,7 @@ import Container from './components/layout/Container'
 import PageDivider from './components/elements/PageDivider'
 import AboutMe from './components/content/AboutMe'
 import Project from './components/content/Project'
+import Footer from './components/content/Footer'
 
 export default function App() {
 	return (
@@ -33,8 +34,8 @@ export default function App() {
 					desktopImage: './images/social-media-dashboard_desktop.png',
 					mobileImage: './images/social-media-dashboard_mobile.png'
 				}}>
-					<p>This is a <a href='https://www.frontendmentor.io/' target='_blank'>Frontent Mentor</a> project built in react.</p>
-					<p>This prject features light/dark theme switching, with the overall theme state being handled within it's own global context.</p>
+					<p>This is a <a href='https://www.frontendmentor.io/' target='_blank'>Frontent Mentor</a> project built in React.</p>
+					<p>This project features light/dark theme switching, with the overall theme state being handled within it's own global context.</p>
 				</Project>
 
 				<PageDivider />
@@ -50,10 +51,10 @@ export default function App() {
 					<p>This is a simple launch schedule which pulls data from the <a href='https://github.com/r-spacex/SpaceX-API' target='_blank'>SpaceX API</a> and displays information about each launch in it's own card.</p>
 				</Project>
 
+				<PageDivider />
 			</main>
-			<footer>
-
-			</footer>
+			
+			<Footer />
 		</Container>
 	)
 }

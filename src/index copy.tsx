@@ -1,14 +1,13 @@
 
 import './scss/index.scss'
-import { createRoot } from 'react-dom/client'
+import ReactDOM from 'react-dom'
 import React, { createContext } from 'react'
 import App from './App'
 import Theme from './context/Theme'
 
-const container = document.getElementById('app')
-const root = createRoot(container!)
-root.render(
+ReactDOM.render(
 	<Theme>
 		<App />
-	</Theme>
+	</Theme>,
+	document.getElementById('root')
 )

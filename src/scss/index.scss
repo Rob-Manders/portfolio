@@ -16,27 +16,3 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
-body {
-	background-color: hsl(227, 35%, 8%);
-	font-family: 'IBM Plex Sans', sans-serif;
-	font-size: 1.1rem;
-	color: hsl(0, 0%, 91%);
-	line-height: 1.5;
-}
-
-a {
-	outline: none;
-	color:hsl(0, 0%, 91%);
-	transition: 150ms ease-in-out;
-
-	&:hover,
-	&:focus {
-		color:hsl(28, 85%, 53%);
-	}
-}
-
-h2 {
-	color: hsl(28, 85%, 53%);
-	font-size: 1.75rem;
-}

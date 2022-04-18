@@ -71,14 +71,14 @@ export default function Jumbotron() {
 	return (
 		<JumbotronContainer theme={darkTheme}>
 			<SkipLink />
-			<ThemeToggle />
+			{/* <ThemeToggle /> */}
 			<div className='title'>
 				<h1>Robert Manders</h1>
 				<p>Front-End Developer</p>
 			</div>
 			<div className='social-links'>
-				<a href='https://github.com/Rob-Manders' target='_blank'><Icon_Github /></a>
-				<a href='https://www.linkedin.com/in/robert-manders-925b88202/' target='_blank'><Icon_LinkedIn /></a>
+				<a href='https://github.com/Rob-Manders' target='_blank' aria-label='visit my github'><Icon_Github /></a>
+				<a href='https://www.linkedin.com/in/robert-manders-925b88202/' target='_blank' aria-label='visit my linked in'><Icon_LinkedIn /></a>
 			</div>
 			<ScrollIndicator />
 		</JumbotronContainer>
