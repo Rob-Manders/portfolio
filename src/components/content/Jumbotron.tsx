@@ -11,7 +11,8 @@ import ScrollIndicator from '../elements/ScrollIndicator'
 const JumbotronContainer = styled.header`
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	height: 85vh;
+	margin-bottom: 20vh;
 
 	.title {
 		display: flex;
@@ -62,6 +63,11 @@ const JumbotronContainer = styled.header`
 				opacity: 1;
 			}
 		}
+	}
+
+	@media (min-width: 600px) {
+		height: 100vh;
+		margin-bottom: 0;
 	}
 `
 
