@@ -19,7 +19,7 @@ const ScrollArrow = styled.div`
 
 	.notScrolled {
 		svg {
-			animation: 5s infinite animateChevron;
+			animation: 3s infinite animateChevron;
 
 			@media (prefers-reduced-motion: reduce) {
 				animation: none;
@@ -49,7 +49,7 @@ const ScrollArrow = styled.div`
 		}
 
 		10% {
-			transform: translateY(0.25rem);
+			transform: translateY(0.5rem);
 		}
 
 		20% {
