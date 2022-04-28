@@ -1,7 +1,6 @@
 
 import React, { useContext, useState, useEffect } from 'react'
 import styled from 'styled-components'
-// import { ThemeContext } from '../../index'
 import { ThemeContext } from '../../context/Theme'
 import Icon_AngleDown from '../icons/Icon_AngleDown'
 
