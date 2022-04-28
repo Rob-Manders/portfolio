@@ -58,7 +58,7 @@ const ScrollArrow = styled.div`
 `
 
 export default function ScrollIndicator() {
-	const darkTheme = useContext(ThemeContext)
+	const { theme } = useContext(ThemeContext)
 	const [scrollPosition, setScrollPostition] = useState<number>(0)
 	const [scrolled, setScrolled] = useState<boolean>(false)
 
@@ -72,7 +72,7 @@ export default function ScrollIndicator() {
 
 
 	return (
-		<ScrollArrow theme={darkTheme}>
+		<ScrollArrow theme={theme}>
 			<a className={scrolled ? 'scrolled' : 'notScrolled'} href='#content' aria-label='skip to content'><Icon_AngleDown /></a>
 		</ScrollArrow>
 	)

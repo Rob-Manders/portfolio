@@ -72,10 +72,10 @@ const JumbotronContainer = styled.header`
 `
 
 export default function Jumbotron() {
-	const darkTheme = useContext(ThemeContext)
+	const { theme } = useContext(ThemeContext)
 
 	return (
-		<JumbotronContainer theme={darkTheme}>
+		<JumbotronContainer theme={theme}>
 			<SkipLink />
 			{/* <ThemeToggle /> */}
 			<div className='title'>

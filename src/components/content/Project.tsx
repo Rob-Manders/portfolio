@@ -91,7 +91,7 @@ interface ComponentProps {
 }
 
 export default function Project({ projectInfo, children }: ComponentProps) {
-	const theme = useContext(ThemeContext)
+	const { theme } = useContext(ThemeContext)
 	const {
 		projectTitle,
 		projectLink,

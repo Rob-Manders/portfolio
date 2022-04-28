@@ -52,7 +52,7 @@ interface ComponentProps {
 }
 
 export default function ProjectGithubLink({ githubLink, projectTitle }: ComponentProps) {
-	const theme = useContext(ThemeContext)
+	const { theme } = useContext(ThemeContext)
 	const [hover, setHover] = useState<boolean>(false)
 
 	return (

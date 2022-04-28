@@ -15,7 +15,7 @@ const FooterContainer = styled.footer`
 `
 
 export default function Footer() {
-	const theme = useContext(ThemeContext)
+	const { theme } = useContext(ThemeContext)
 
 	return (
 		<FooterContainer theme={theme}>

@@ -56,7 +56,7 @@ const ToggleContainer = styled.button`
 `
 
 export default function ThemeToggle() {
-	const theme = useContext(ThemeContext)
+	const { theme, switchTheme } = useContext(ThemeContext)
 	const [toggled, setToggled] = useState<boolean>(false)
 
 	// TODO: Hook up to switch theme.

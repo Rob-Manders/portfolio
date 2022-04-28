@@ -22,7 +22,7 @@ const ProjectLinkButton = styled.a`
 `
 
 export default function ProjectLink({ projectLink }: { projectLink: string }) {
-	const theme = useContext(ThemeContext)
+	const { theme } = useContext(ThemeContext)
 	return (
 		<ProjectLinkButton theme={theme} href={projectLink} target='_blank'>
 			Visit Site
