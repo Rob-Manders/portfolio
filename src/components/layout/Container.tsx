@@ -46,7 +46,7 @@ const PageContainer = styled.div`
 `
 
 export default function Container({ children }: { children: ReactNode }) {
-	const theme = useContext(ThemeContext)
+	const { theme } = useContext(ThemeContext)
 
 	return (
 		<PageContainer theme={theme}>

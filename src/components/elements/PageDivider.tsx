@@ -28,10 +28,10 @@ const Divider = styled.div`
 `
 
 export default function PageDivider() {
-	const darkTheme = useContext(ThemeContext)
+	const { theme } = useContext(ThemeContext)
 
 	return (
-		<Divider theme={darkTheme}>
+		<Divider theme={theme}>
 			<div className='line' />
 			<Icon_Code />
 			<div className='line' />

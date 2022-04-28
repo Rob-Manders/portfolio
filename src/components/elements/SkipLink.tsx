@@ -35,10 +35,10 @@ const SkipButton = styled.a`
 `
 
 export default function SkipLink() {
-	const darkTheme = useContext(ThemeContext)
+	const { theme } = useContext(ThemeContext)
 
 	return (
-		<SkipButton theme={ darkTheme } href='#content' aria-label='Skip to content'>
+		<SkipButton theme={ theme } href='#content' aria-label='Skip to content'>
 			Skip to Content
 		</SkipButton>
 	)

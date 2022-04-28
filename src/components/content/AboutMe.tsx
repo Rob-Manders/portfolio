@@ -65,10 +65,10 @@ const AboutMeContainer = styled.section`
 `
 
 export default function AboutMe() {
-	const darkTheme = useContext(ThemeContext)
+	const { theme } = useContext(ThemeContext)
 
 	return (
-		<AboutMeContainer theme={darkTheme} aria-label='about me'>
+		<AboutMeContainer theme={theme} aria-label='about me'>
 			<h2 className='heading'>Hi, I'm Robert!</h2>
 			<div className='mugshot'>
 				<img src='./images/mugshot.jpg' width='300' height='300' alt='a picture of me'/>
