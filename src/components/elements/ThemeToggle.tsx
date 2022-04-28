@@ -1,5 +1,5 @@
 
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { ThemeContext } from '../../context/Theme'
 import Icon_Moon from '../icons/Icon_Moon'
@@ -25,7 +25,7 @@ const ToggleContainer = styled.button`
 	.switch {
 		width: 3rem;
 		height: 1.5rem;
-		background-color: #010102;
+		background-color: ${props => props.theme.toggleBackground};
 		margin: 0 0.5rem;
 		border-radius: 100vw;
 
@@ -57,15 +57,12 @@ const ToggleContainer = styled.button`
 
 export default function ThemeToggle() {
 	const { theme, switchTheme } = useContext(ThemeContext)
-	const [toggled, setToggled] = useState<boolean>(false)
-
-	// TODO: Hook up to switch theme.
 
 	return (
-		<ToggleContainer theme={theme} onClick={() => setToggled(!toggled)} aria-label='Change colour theme'>
+		<ToggleContainer theme={theme} onClick={() => switchTheme()} aria-label='Change colour theme'>
 			<Icon_Moon />
 			<div className='switch'>
-				<div className={`toggle ${toggled && 'toggled'}`} />
+				<div className={`toggle ${theme.themeName === 'light' && 'toggled'}`} />
 			</div>
 			<Icon_Sun />
 		</ToggleContainer>

@@ -77,7 +77,7 @@ export default function Jumbotron() {
 	return (
 		<JumbotronContainer theme={theme}>
 			<SkipLink />
-			{/* <ThemeToggle /> */}
+			<ThemeToggle />
 			<div className='title'>
 				<h1>Robert Manders</h1>
 				<p>Front-End Developer</p>

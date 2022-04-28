@@ -11,6 +11,7 @@ export interface Theme {
 	themeName: string
 	background: string
 	backgroundSecondary: string
+	toggleBackground: string
 	primary: string
 	accent: string
 }
