@@ -52,6 +52,20 @@ export default function App() {
 				</Project>
 
 				<PageDivider />
+
+				<Project projectInfo={{
+					projectTitle: 'Spectrum Theme for Stylestage',
+					projectLink: 'https://stylestage.dev/styles/spectrum/',
+					githubLink: 'https://github.com/Rob-Manders/Style-Stage-Spectrum',
+					desktopImage: './images/stylestage-spectrum_desktop.png',
+					mobileImage: './images/stylestage-spectrum_mobile.png'
+				}}>
+					<p>One of my very earliest projects, a theme for <a href='https://stylestage.dev/'>Stylestage</a> built using SASS to test my CSS and SASS skills.</p>
+					<p><a href='https://stylestage.dev/'>Stylestage</a> is a project designed to showcase what is possible with modern CSS and is open to submissions from anyone.</p>
+				</Project>
+
+				<PageDivider />
+
 			</main>
 			
 			<Footer />
