@@ -36,10 +36,7 @@ export default function App() {
             A website for the Newcastle Go Club, built to increase our online
             presence as we look to grow the club.
           </p>
-          <p>
-            Built in Next.js, this website features a simple back end and admin
-            pages to set up, store and serve the meeting schedule.
-          </p>
+          <p>Built in React using Typescript.</p>
         </Project>
 
         <PageDivider />
