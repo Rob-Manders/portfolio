@@ -7,8 +7,8 @@ import spaceXLaunchScheduleDesktop from './images/spacex-launch-schedule_desktop
 import spaceXLaunchScheduleMobile from './images/spacex-launch-schedule_mobile.png'
 import stylestageSpectrumDesktop from './images/stylestage-spectrum_desktop.png'
 import stylestageSpectrumMobile from './images/stylestage-spectrum_mobile.png'
-import listApp1 from './images/list-App_1.png'
-import listApp2 from './images/list-App_2.png'
+import listApp1 from './images/list-app_1.png'
+import listApp2 from './images/list-app_2.png'
 
 export {
   mugshot,
