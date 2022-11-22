@@ -13,7 +13,9 @@ import {
   spaceXLaunchScheduleDesktop,
   spaceXLaunchScheduleMobile,
   stylestageSpectrumDesktop,
-  stylestageSpectrumMobile
+  stylestageSpectrumMobile,
+  listApp1,
+  listApp2
 } from './assets/images'
 
 export default function App() {
@@ -23,6 +25,27 @@ export default function App() {
 
       <main id='content'>
         <AboutMe />
+
+        <Project
+          projectInfo={{
+            projectTitle: 'Checklist App',
+            projectLink: 'https://list-app-tau.vercel.app/',
+            githubLink: 'https://github.com/Rob-Manders/list-app',
+            desktopImage: listApp1,
+            mobileImage: listApp2
+          }}
+          mobile
+        >
+          <p>No portfolio is complete without a to-do list.</p>
+          <p>
+            Built to get to grips with Next.js and Firebase. The lists are all
+            stored in a Firestore database with user authentication provided by
+            Firebase auth.
+          </p>
+        </Project>
+
+        <PageDivider />
+
         <Project
           projectInfo={{
             projectTitle: 'Newcastle Go Club',
